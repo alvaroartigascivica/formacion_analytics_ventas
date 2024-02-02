@@ -11,13 +11,3 @@ datagroup: ventas_analytics_default_datagroup {
 persist_with: ventas_analytics_default_datagroup
 
 explore: d_categoria {}
-
-explore: d_fecha {}
-
-explore: prueba {
-  view_name: d_pais
-}
-
-explore: d_tipo_tarjeta {}
-
-explore: h_ventas {}
