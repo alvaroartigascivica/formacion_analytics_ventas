@@ -1,5 +1,5 @@
 view: d_pais {
-  sql_table_name: "D_PAIS" ;;
+  sql_table_name: "VENTAS"."D_PAIS" ;;
 
   dimension: desc_pais {
     type: string
