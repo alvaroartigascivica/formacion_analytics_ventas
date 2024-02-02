@@ -14,9 +14,10 @@ explore: d_categoria {}
 
 explore: d_fecha {}
 
-explore: d_pais {}
+explore: prueba {
+  view_name: d_pais
+}
 
 explore: d_tipo_tarjeta {}
 
 explore: h_ventas {}
-
