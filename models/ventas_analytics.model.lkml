@@ -10,4 +10,14 @@ datagroup: ventas_analytics_default_datagroup {
 
 persist_with: ventas_analytics_default_datagroup
 
-explore: d_categoria {}
+explore: ventas {
+  from: h_ventas
+
+  join: fecha {
+    from: d_fecha
+    type:  inner
+    relationship:  many_to_one
+    sql_on: ${ventas.id_fecha} = ${fecha.id_fecha} ;;
+  }
+
+}
