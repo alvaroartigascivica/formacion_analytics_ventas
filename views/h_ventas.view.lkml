@@ -45,4 +45,10 @@ view: h_ventas {
     sql: ${TABLE}."VENTAS" ;;
   }
 
+  measure: venta_media {
+    type: number
+    value_format_name: eur
+    sql: ${suma}/${cuenta} ;;
+  }
+
 }
