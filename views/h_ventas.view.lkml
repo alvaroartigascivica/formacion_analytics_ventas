@@ -44,5 +44,17 @@ view: h_ventas {
     type: average
     sql: ${TABLE}."VENTAS" ;;
   }
+  measure: total_sales {
+    type: sum
+    sql: ${ventas} ;;
+    value_format_name: usd_0
+  }
+  measure: media_venta {
+    type:  number
+    value_format_name: percent_1
+    sql: 1.0*${total_sales}/
+    NULLIF(${cuenta},0) ;;
+  }
+
 
 }
