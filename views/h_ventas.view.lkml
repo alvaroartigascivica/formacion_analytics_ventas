@@ -51,7 +51,7 @@ view: h_ventas {
   }
   measure: media_venta {
     type:  number
-    value_format_name: percent_1
+    value_format_name: usd_0
     sql: 1.0*${total_sales}/
     NULLIF(${cuenta},0) ;;
   }
